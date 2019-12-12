@@ -1,5 +1,5 @@
 import AppleSignIn from './libs/modules/AppleSignIn'
 
-export default {
+export {
   AppleSignIn
 }
