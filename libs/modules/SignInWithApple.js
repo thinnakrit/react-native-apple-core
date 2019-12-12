@@ -24,16 +24,16 @@ class SignInWithApple extends Component {
     this.handleCallBack = this.handleCallBack.bind(this);
   }
 
-  openSignIn = () => {
+  openSignIn(){
     this.onSignIn()
     this.actionSheetRef.open()
   }
 
-  handleNavigationStateChange = (webViewState) => {
+  handleNavigationStateChange(webViewState){
     this.signInContainerRef.onNavigationStateChange(webViewState)
   }
 
-  handleCallBack = (result) => {
+  handleCallBack(result) {
     const { onSuccess } = this.props
     onSuccess(result)
     this.setState({
@@ -42,7 +42,7 @@ class SignInWithApple extends Component {
     this.actionSheetRef.close()
   }
 
-  onSignIn = () => {
+  onSignIn() {
     this.setState({
       isStartCallService: true
     })
@@ -118,7 +118,7 @@ class SignInWithApple extends Component {
               <WebView
                 ref="webview"
                 source={{ uri: getUri }}
-                onNavigationStateChange={this.handleNavigationStateChange}
+                onNavigationStateChange={(webViewState) => this.handleNavigationStateChange(webViewState)}
                 javaScriptEnabled = {true}
                 domStorageEnabled = {true}
                 startInLoadingState={false}
