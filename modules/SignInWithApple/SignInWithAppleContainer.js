@@ -5,10 +5,13 @@ import SignInWithAppleService from '../../utils/SignInWithAppleService'
 
 class SignInWithAppleContainer extends Component {
 
-  state = {
-    isStartCallService: false,
-    response_type: "id_token code",
-    response_mode: "fragment",
+  constructor(props) {
+    super(props);
+    this.state = {
+      isStartCallService: false,
+      response_type: "id_token code",
+      response_mode: "fragment",
+    }
   }
 
   onSignIn = () => {

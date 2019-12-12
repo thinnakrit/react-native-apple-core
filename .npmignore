@@ -1,6 +1,7 @@
 # Logs
 *.log
 npm-debug.log
+package-lock.json
 
 # Dependency directory
 node_modules
@@ -12,3 +13,13 @@ tmp
 src
 android
 ios
+
+index.js
+app.json
+metro.config.js
+babel.config.js
+
+.buckconfig
+.eslintrc.js
+.prettierrc.js
+.watchmanconfig
