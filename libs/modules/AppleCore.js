@@ -114,7 +114,7 @@ export default class AppleCore extends Component {
           }}
         >
           {isStartCallService ? (
-            <View style={{flex: 1, height: screenHeight - 100}}>
+            <View style={{flex: 1, height: screenHeight - 100, position: 'relative', zIndex: 99}}>
               <WebView
                 ref="webview"
                 source={{ uri: getUri }}
@@ -127,6 +127,8 @@ export default class AppleCore extends Component {
                   resizeMode: 'cover',
                   width: screenWidth,
                   height: screenHeight - 100,
+                  position: 'relative',
+                  zIndex: 99
                 }}
               />
             </View>
