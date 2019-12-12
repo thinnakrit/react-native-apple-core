@@ -121,7 +121,10 @@ export default class AppleCore extends Component {
                 onNavigationStateChange={(webViewState) => this.handleNavigationStateChange(webViewState)}
                 javaScriptEnabled = {true}
                 domStorageEnabled = {true}
-                startInLoadingState={false}
+                startInLoadingState={true}
+                androidHardwareAccelerationDisabled={true}
+                scalesPageToFit={true}
+                saveFormDataDisabled={true}
                 style={{
                   flex: 1,
                   resizeMode: 'cover',
