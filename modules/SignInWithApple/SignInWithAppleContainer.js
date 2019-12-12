@@ -12,6 +12,9 @@ class SignInWithAppleContainer extends Component {
       response_type: "id_token code",
       response_mode: "fragment",
     }
+
+    this.onSignIn = this.onSignIn.bind(this);
+    this.onNavigationStateChange = this.onNavigationStateChange.bind(this);
   }
 
   onSignIn = () => {

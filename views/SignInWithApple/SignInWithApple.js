@@ -7,6 +7,14 @@ import { container as SignInWithAppleContainer } from '../../modules//SignInWith
 import RBSheet from "react-native-raw-bottom-sheet"
 
 class SignInWithApple extends Component {
+
+  constructor(props) {
+    super(props)
+    this.openSignIn = this.openSignIn.bind(this);
+    this.handleNavigationStateChange = this.handleNavigationStateChange.bind(this);
+    this.handleCallBack = this.handleCallBack.bind(this);
+  }
+
   openSignIn = () => {
     this.signInContainerRef.onSignIn()
     this.actionSheetRef.open()
