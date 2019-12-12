@@ -1,8 +1,12 @@
+
+import React from 'react';
+
 declare module 'react-native-apple-core' {
-  import React from 'react';
-  interface Props {
-      onSuccess?: any;
+  export type RNAppleCoreProps = {
+      onSuccess?: (result: any) => void
       initialConfig?: any;
   }
-  export default class SignInWithApple extends React.Component<Props, any> {}
+  export default class SignInWithApple extends React.Component<RNAppleCoreProps> {
+    openSignIn(): void;
+  }
 }

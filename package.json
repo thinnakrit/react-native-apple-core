@@ -1,7 +1,7 @@
 {
   "name": "react-native-apple-core",
   "description": "Apple core for React Native",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
@@ -11,6 +11,7 @@
     "lint": "eslint ."
   },
   "main": "rnapplecore.js",
+  "typings": "index.d.ts",
   "bugs": {
     "url": "https://github.com/thinnakrit/react-native-apple-core/issues"
   },
