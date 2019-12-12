@@ -1,3 +1,3 @@
-import SignInWithApple from './libs/SignInWithApple'
+import SignInWithApple from './libs/modules/SignInWithApple'
 
 export { SignInWithApple }
