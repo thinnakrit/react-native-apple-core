@@ -1,3 +1,5 @@
-import AppleCore from './libs/modules/AppleCore'
+import AppleSignIn from './libs/modules/AppleSignIn'
 
-export default AppleCore
+export default {
+  AppleSignIn
+}
