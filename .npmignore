@@ -13,8 +13,7 @@ tmp
 src
 android
 ios
-
-index.js
+app.js
 app.json
 metro.config.js
 babel.config.js

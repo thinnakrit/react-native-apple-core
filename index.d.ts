@@ -6,7 +6,7 @@ declare module 'react-native-apple-core' {
       onSuccess?: (result: any) => void
       initialConfig?: any;
   }
-  export default class SignInWithApple extends React.Component<RNAppleCoreProps> {
+  export default class AppleCore extends React.Component<RNAppleCoreProps> {
     openSignIn(): void;
   }
 }
