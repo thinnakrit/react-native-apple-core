@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import RBSheet from "react-native-raw-bottom-sheet"
 import SignInWithAppleService from '../utils/SignInWithAppleService'
 
-class AppleCore extends Component {
+export default class AppleCore extends Component {
 
   constructor(props) {
     super(props)
@@ -143,5 +143,3 @@ SignInWithApple.propTypes = {
   onSuccess: PropTypes.func.isRequired,
   initialConfig: PropTypes.object.isRequired,
 }
-
-export default AppleCore
