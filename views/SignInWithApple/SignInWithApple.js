@@ -3,7 +3,7 @@ import { Text, View, Dimensions } from 'react-native'
 import { WebView } from 'react-native-webview'
 import PropTypes from 'prop-types'
 // ---
-import { container as SignInWithAppleContainer } from '../../modules//SignInWithApple'
+import { container as SignInWithAppleContainer } from '../../modules/SignInWithApple'
 import RBSheet from "react-native-raw-bottom-sheet"
 
 class SignInWithApple extends Component {
