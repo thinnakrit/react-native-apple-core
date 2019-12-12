@@ -3,7 +3,12 @@
 Use Apple services on React Native
 
 * Apple Sign in service [ iOS , Android ]
- ( You can use iOS Native service on https://github.com/invertase/react-native-apple-authentication )
+ <br /> (You can use iOS Native service on https://github.com/invertase/react-native-apple-authentication )
+ 
+
+|                                                      Start                                                   |                                                   openSignIn                                                    |
+| :--------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+| ![](https://i.imgur.com/IxGPtX7.png) | ![](https://i.imgur.com/OcUvwpW.png) |
 
 # Install
 Npm
@@ -101,11 +106,12 @@ initialConfig : Object
 <br />
 For configulation apple service api.
 Read more: <a href="https://developer.apple.com/documentation/signinwithapplejs/incorporating_sign_in_with_apple_into_other_platforms">https://developer.apple.com/documentation/signinwithapplejs/incorporating_sign_in_with_apple_into_other_platforms</a>
-| Key Name | Type        | Description        |
-| ----------- | ------------------ |------------------ |
-| redirect_uri       | String | https://example.com/callback|
-| client_id       | String | web.app.exampleapp|
-| state       | String | Generate for compare callback|
+
+| Key Name        | Type   | Description                  |
+| --------------- | ------ |----------------------------  |
+| redirect_uri    | String | https://example.com/callback |
+| client_id       | String | web.app.exampleapp           |
+| state           | String | Generate for compare callback|
 
 # License
 MIT
