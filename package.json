@@ -10,8 +10,8 @@
     "test": "jest",
     "lint": "eslint ."
   },
-  "main": "rnapplecore.js",
-  "typings": "rnapplecore.d.ts",
+  "main": "index.js",
+  "typings": "index.d.ts",
   "bugs": {
     "url": "https://github.com/thinnakrit/react-native-apple-core/issues"
   },
