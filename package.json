@@ -11,7 +11,7 @@
     "lint": "eslint ."
   },
   "main": "rnapplecore.js",
-  "typings": "index.d.ts",
+  "typings": "rnapplecore.d.ts",
   "bugs": {
     "url": "https://github.com/thinnakrit/react-native-apple-core/issues"
   },
