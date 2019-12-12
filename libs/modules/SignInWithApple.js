@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import { Text, View, Dimensions } from 'react-native'
+import { View, Dimensions } from 'react-native'
 import { WebView } from 'react-native-webview'
 import PropTypes from 'prop-types'
 // ---
