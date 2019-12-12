@@ -30,7 +30,7 @@ export default class AppleCore extends Component {
   }
 
   handleNavigationStateChange(webViewState){
-    this.signInContainerRef.onNavigationStateChange(webViewState)
+    this.onNavigationStateChange(webViewState)
   }
 
   handleCallBack(result) {

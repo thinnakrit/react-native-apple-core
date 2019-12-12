@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { View, TouchableOpacity, Image } from 'react-native'
-import SignInWithApple from '../views/SignInWithApple/SignInWithApple'
+import AppleCore from '../libs/modules/AppleCore'
 class Sample extends Component {
 
   handleOpenSignIn = () => {
@@ -23,7 +23,7 @@ class Sample extends Component {
             }}
           source={{uri: "https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/images/apple-id-sign-in-with_2x.png"}} />
         </TouchableOpacity>
-        <SignInWithApple
+        <AppleCore
           ref={ ref => this.signinRef = ref}
           initialConfig={{
             redirect_uri: "https://www.example.app/apple-callback",
