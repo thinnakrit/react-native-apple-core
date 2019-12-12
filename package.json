@@ -1,7 +1,7 @@
 {
   "name": "react-native-apple-core",
   "description": "Apple core for React Native",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
@@ -39,6 +39,14 @@
   ],
   "author": "Thinnakrit",
   "license": "MIT",
+  "peerDependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "prop-types": ">=15.6.0",
+    "react-native-raw-bottom-sheet": "^2.0.6",
+    "react-native-webview": "^7.6.0",
+    "url-join": "^4.0.1"
+  },
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "16.9.0",
