@@ -1,3 +1,3 @@
-import SignInWithApple from './views/SignInWithApple/SignInWithApple'
+import SignInWithApple from './views/SignInWithApple'
 
 export { SignInWithApple }
