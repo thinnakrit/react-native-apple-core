@@ -49,7 +49,7 @@ export default class AppleCore extends Component {
   }
 
   onNavigationStateChange = (webViewState) => {
-    const { onCallBack } = this.props
+    const { onSuccess } = this.props
     const appleUri = "https://appleid.apple.com"
     const getParam = webViewState.url.split("/auth/")
     if (getParam[0] !== appleUri) {
@@ -67,7 +67,7 @@ export default class AppleCore extends Component {
           this.setState({
             isStartCallService: false
           })
-          onCallBack(getValue)
+          onSuccess(getValue)
         }
       }
     }
