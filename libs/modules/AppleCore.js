@@ -139,7 +139,7 @@ export default class AppleCore extends Component {
   }
 }
 
-SignInWithApple.propTypes = {
+AppleCore.propTypes = {
   onSuccess: PropTypes.func.isRequired,
   initialConfig: PropTypes.object.isRequired,
 }
