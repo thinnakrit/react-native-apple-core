@@ -1,7 +1,7 @@
 {
   "name": "react-native-apple-core",
   "description": "Apple core for React Native",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
@@ -49,6 +49,7 @@
     "url-join": "^4.0.1"
   },
   "dependencies": {
+    "jwt-decode": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.5",

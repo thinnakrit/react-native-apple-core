@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react'
 import { View, Dimensions } from 'react-native'
 import { WebView } from 'react-native-webview'
 import PropTypes from 'prop-types'
+import jwtDecode from 'jwt-decode'
 // ---
 import RBSheet from "react-native-raw-bottom-sheet"
 import SignInWithAppleService from '../utils/SignInWithAppleService'
@@ -63,7 +64,11 @@ export default class AppleSignIn extends Component {
           return prev
         }, {})
         if (getValue) {
-          this.handleCallBack(getValue)
+          const result = getValue && getValue.id_token ? jwtDecode(getValue.id_token) : {}
+          this.handleCallBack({
+            ...getValue,
+            data: result
+          })
         }
       }
     }

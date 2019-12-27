@@ -96,7 +96,14 @@ response
 {
   "code": "xxxxxx",
   "id_token": "xxxxxxx",
-  "state": "xxkxkxkkxkxxkxk"
+  "state": "xxkxkxkkxkxxkxk",
+  "data": {
+    // jwt data
+    "aud": "xxxx",
+    "auth_time": "xxxx",
+    "email": "xxxx",
+    "sub": "xxxx",
+  }
 }
 
 ```
