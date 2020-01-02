@@ -79,11 +79,9 @@ export default class AppleSignIn extends Component {
       redirect_uri,
       client_id,
       state,
-      children,
-    } } = this.props
+    }, children } = this.props
     const screenWidth = Math.round(Dimensions.get('window').width)
     const screenHeight = Math.round(Dimensions.get('window').height)
-
     const {
       isStartCallService,
       response_type,
@@ -141,7 +139,7 @@ export default class AppleSignIn extends Component {
             <Fragment />
           )}
         </RBSheet>
-        {children && <TouchableOpacity onPress={() => this.openSignIn()}>{children}</TouchableOpacity>}
+        {children && <TouchableOpacity style={{width: '100%'}} onPress={() => this.openSignIn()}>{children}</TouchableOpacity>}
       </Fragment>
     )
   }

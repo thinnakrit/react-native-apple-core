@@ -20,7 +20,7 @@ Yarn
 yarn add react-native-apple-core
 ```
 
-# Usage (1)  version >= 1.0.29
+# Usage (1)  version >= 1.0.30
 
 ### Apple Sign in
 
@@ -75,7 +75,7 @@ export default Sample
 ```
 
 
-# Usage (2) version <= 1.0.29
+# Usage (2) version <= 1.0.30
 
 ### Apple Sign in
 
