@@ -20,7 +20,62 @@ Yarn
 yarn add react-native-apple-core
 ```
 
-# Usage
+# Usage (1)  version >= 1.0.29
+
+### Apple Sign in
+
+```javascript
+import { Text } from 'react-native'
+import { AppleSignIn }  from 'react-native-apple-core'
+// dom
+<AppleSignIn
+  ref={ ref => this.signinRef = ref}
+  initialConfig={{
+    redirect_uri: "https://www.example.app/apple-callback",
+    client_id: "web.app.exampleapp",
+    state: "xxkxkxkkxkxxkxk", // for compare response data
+  }}
+  onSuccess={ (result) => console.log('onSuccess', result) }
+>
+  <Text>Continue with Apple</Text>
+</AppleSignIn>
+```
+
+#### Example
+```jsx
+import React, { Component } from 'react'
+import { View, Text } from 'react-native'
+import { AppleSignIn }  from 'react-native-apple-core'
+class Sample extends Component {
+
+  handleSuccess = (result) => {
+    console.log('handleSuccess', result)
+  }
+
+  render() {
+    return (
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <AppleSignIn
+          ref={ ref => this.signinRef = ref}
+          initialConfig={{
+            redirect_uri: "https://www.example.app/apple-callback",
+            client_id: "web.app.exampleapp",
+            state: "xxkxkxkkxkxxkxk", // for compare response data
+          }}
+          onSuccess={ this.handleSuccess }
+        >
+          <Text>Continue with Apple</Text>
+        </AppleSignIn>
+      </View>
+    )
+  }
+}
+
+export default Sample
+```
+
+
+# Usage (2) version <= 1.0.29
 
 ### Apple Sign in
 

@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import { View, Dimensions } from 'react-native'
+import { View, Dimensions, TouchableOpacity } from 'react-native'
 import { WebView } from 'react-native-webview'
 import PropTypes from 'prop-types'
 import jwtDecode from 'jwt-decode'
@@ -79,6 +79,7 @@ export default class AppleSignIn extends Component {
       redirect_uri,
       client_id,
       state,
+      children,
     } } = this.props
     const screenWidth = Math.round(Dimensions.get('window').width)
     const screenHeight = Math.round(Dimensions.get('window').height)
@@ -140,12 +141,14 @@ export default class AppleSignIn extends Component {
             <Fragment />
           )}
         </RBSheet>
+        {children && <TouchableOpacity onPress={() => this.openSignIn()}>{children}</TouchableOpacity>}
       </Fragment>
     )
   }
 }
 
 AppleSignIn.propTypes = {
-  onSuccess: PropTypes.func.isRequired,
+  onSuccess: PropTypes.func,
   initialConfig: PropTypes.object.isRequired,
+  children: PropTypes.node,
 }
