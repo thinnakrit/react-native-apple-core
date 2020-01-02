@@ -3,12 +3,12 @@
 Use Apple services on React Native
 
 * Apple Sign in service [ iOS , Android ]
- <br /> (You can use iOS Native service on https://github.com/invertase/react-native-apple-authentication )
+ 
  
 
-|                                                      Start                                                   |                                                   openSignIn                                                    |
+|                    iOS Native Apple Signin                                                   |Android Web Signin
 | :--------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-| ![](https://i.imgur.com/IxGPtX7.png) | ![](https://i.imgur.com/OcUvwpW.png) |
+| <img src="https://i.imgur.com/TXmhDAR.png" style="width: 300px;" /> | <img src="https://i.imgur.com/OcUvwpW.png" style="width: 300px;" /> |
 
 # Install
 Npm
