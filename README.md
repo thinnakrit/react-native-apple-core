@@ -2,6 +2,9 @@
 
 Use Apple services on React Native
 
+Update Log
+- 1.1.0 : Update version react-native-webview@8.0.3
+
 * Apple Sign in service [ iOS , Android ]
  
  
