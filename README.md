@@ -9,9 +9,6 @@ Update Log
  
  
 
-|                    iOS Native Apple Signin                                                   |Android Web Signin
-| :--------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://i.imgur.com/TXmhDAR.png" style="width: 300px;" /> | <img src="https://i.imgur.com/OcUvwpW.png" style="width: 300px;" /> |
 
 # Install
 Npm
